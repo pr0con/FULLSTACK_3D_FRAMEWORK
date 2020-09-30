@@ -1,0 +1,15 @@
+{
+  "name": "node_systems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.5.0"
+  }
+}

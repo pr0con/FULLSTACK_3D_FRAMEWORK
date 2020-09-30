@@ -1,0 +1,39 @@
+- mkdir keycertz
+- openssl genrsa -des3 -out mykey.pem 2048
+- openssl rsa -in mykey.pem -pubout > mykey.pub
+
+Nginx Certbot ubuntu 20.04
+	- apt install certbot python3-certbot-nginx
+	- service nginx stop
+	- sudo certbot certonly --standalone -d yourdomain.com -d www.yourdomain.com
+	- service nginx start
+
+.bash_profile --> in your home directory
+export GOPATH=/var/www/go_systems/
+export PATH=$PATH:$GOPATH/bin
+
+	-after creating bash profile run command --> source ~/.bash_profile
+
+Orbitron Front
+https://fonts.google.com/specimen/Orbitron?selection.family=Orbitron:wght@400;500;600;700;800;900&sidebar.open=true	
+
+
+Futuristic Icons
+https://creativemarket.com/julvil/409616-Set-of-vector-futuristic-icons
+https://creativemarket.com/julvil/915774-Set-of-futuristic-icons
+
+CSS 3d
+https://3dtransforms.desandro.com/
+
+Composer
+- https://www.digitalocean.com/community/tutorials/how-to-install-composer-on-ubuntu-20-04-quickstart
+- sudo apt install php-cli unzip
+- curl -sS https://getcomposer.org/installer -o composer-setup.php <-- in php_systems
+- HASH=`curl -sS https://composer.github.io/installer.sig`
+- php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+- php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+PHP SWOOLE
+- https://www.swoole.co.uk/docs/get-started/installation <--follow this after php7.4-dev install
+- https://www.easyswoole.com/En/Socket/webSocketWss.html
+- apt-get install php7.x-dev -->> CHANGE X to version --> apt-get install php7.4-dev
